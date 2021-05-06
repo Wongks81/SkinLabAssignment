@@ -1,3 +1,4 @@
+import 'package:assignment/about/about.dart';
 import 'package:assignment/homepage/homepage.dart';
 import 'package:flutter/material.dart';
 
@@ -15,6 +16,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       routes: {
         '/': (context) => HomePage(),
+        '/about': (context) => About(),
       },
     );
   }

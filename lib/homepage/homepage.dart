@@ -1,3 +1,4 @@
+import 'package:assignment/common/top_dropdownmenu.dart';
 import 'package:flutter/material.dart';
 import 'package:assignment/homepage/promo_carousel.dart';
 import 'package:assignment/homepage/research_promise.dart';
@@ -17,6 +18,9 @@ class _HomePageState extends State<HomePage> {
         title: Image.asset('assets/homepage/skinlablogo128.png',
             fit: BoxFit.contain),
         backgroundColor: Colors.yellow[50],
+        actions: [
+          TopDropDown(),
+        ],
       ),
       body: Column(
         children: [
