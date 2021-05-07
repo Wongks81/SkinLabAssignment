@@ -7,7 +7,7 @@ class SpecialtyFacial extends StatelessWidget {
       color: Colors.yellow[100],
       child: Column(
         children: [
-          Image.asset('assets/treatment/speciality.png',
+          Image.asset('assets/treatment/specialty.png',
               height: 200, width: 400),
           Container(
             padding: EdgeInsets.fromLTRB(10, 10, 10, 2),

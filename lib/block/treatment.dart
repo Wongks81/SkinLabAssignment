@@ -1,5 +1,5 @@
+import 'package:assignment/block/treatment_model.dart';
 import 'package:flutter/material.dart';
-import '../model/treatment_model.dart';
 
 class Treatment extends StatefulWidget {
   @override
