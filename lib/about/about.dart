@@ -1,4 +1,3 @@
-import 'package:assignment/common/top_dropdownmenu.dart';
 import 'package:flutter/material.dart';
 
 class About extends StatelessWidget {
@@ -12,9 +11,6 @@ class About extends StatelessWidget {
         title: Image.asset('assets/homepage/skinlablogo128.png',
             fit: BoxFit.contain),
         backgroundColor: Colors.yellow[50],
-        actions: [
-          TopDropDown(),
-        ],
       ),
       body: Column(
         children: [
