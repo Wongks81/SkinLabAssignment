@@ -1,6 +1,7 @@
 import 'package:assignment/about/about.dart';
 import 'package:assignment/homepage/homepage.dart';
 import 'package:assignment/treatment/combo/combo.dart';
+import 'package:assignment/treatment/specialty/specialty.dart';
 import 'package:flutter/material.dart';
 
 import 'treatment/treatment.dart';
@@ -22,6 +23,7 @@ class MyApp extends StatelessWidget {
         '/about': (context) => About(),
         '/treatment': (context) => Treatment(),
         '/treatment/combo': (context) => Combo(),
+        '/treatment/specialty': (context) => Specialty(),
       },
     );
   }

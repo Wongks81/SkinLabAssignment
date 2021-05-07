@@ -1,8 +1,6 @@
-import 'package:assignment/treatment/combo_facial.dart';
-import 'package:assignment/treatment/specialty_facial.dart';
 import 'package:flutter/material.dart';
 
-class Treatment extends StatelessWidget {
+class Specialty extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -14,11 +12,8 @@ class Treatment extends StatelessWidget {
             fit: BoxFit.contain),
         backgroundColor: Colors.yellow[50],
       ),
-      body: Column(
-        children: [
-          ComboFacial(),
-          SpecialtyFacial(),
-        ],
+      body: ListView(
+        children: [],
       ),
     );
   }
