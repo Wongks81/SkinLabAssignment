@@ -1,5 +1,6 @@
 import 'package:assignment/about/about.dart';
 import 'package:assignment/homepage/homepage.dart';
+import 'package:assignment/treatment/treatment.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,6 +18,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => HomePage(),
         '/about': (context) => About(),
+        '/treatment': (context) => Treatment(),
       },
     );
   }

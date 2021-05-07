@@ -15,6 +15,10 @@ class TopDropDown extends StatelessWidget {
           value: 0,
           child: Text('About'),
         ),
+        PopupMenuItem<int>(
+          value: 1,
+          child: Text('Treatment'),
+        ),
       ],
     );
   }
@@ -24,6 +28,9 @@ void onSelected(BuildContext context, int item) {
   switch (item) {
     case 0:
       Navigator.pushNamed(context, '/about');
+      break;
+    case 1:
+      Navigator.pushNamed(context, '/treatment');
       break;
   }
 }
