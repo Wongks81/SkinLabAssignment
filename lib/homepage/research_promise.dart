@@ -29,7 +29,9 @@ class ResearchPromise extends StatelessWidget {
           Column(
             children: [
               OutlinedButton(
-                onPressed: () {},
+                onPressed: () => {
+                  Navigator.pushNamed(context, '/about'),
+                },
                 style: OutlinedButton.styleFrom(
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10),

@@ -1,4 +1,3 @@
-import 'package:assignment/prices/pdfDownload.dart';
 import 'package:assignment/prices/prices_carousel.dart';
 import 'package:flutter/material.dart';
 

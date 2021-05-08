@@ -1,5 +1,6 @@
 import 'package:assignment/model/treatmentitem.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Combo extends StatelessWidget {
   final List<TreatmentItem> treatList = listTreatment();
@@ -32,6 +33,8 @@ List<TreatmentItem> listTreatment() {
         'Brighten and achieve glass skin with this dynamic duo backed by doctors - the combination of medical-grade chemical peels and advanced intense pulsed light technology.',
     duration: '120 mins',
     priceRange: '\$482 to \$514 NETT',
+    whatsappAPI:
+        'https://api.whatsapp.com/send/?phone=6597703610&text&app_absent=0',
     remarks: '50% off first trial*, 1-for-1 first trial*',
   ));
 
@@ -42,6 +45,8 @@ List<TreatmentItem> listTreatment() {
         'Pairing our Aqua Peel Facial using the patented Aqua ST peeling system that exfoliates and infuses topical solution simultaneously, together with advanced intense pulsed light technology for an all-rounded skin revival.',
     duration: '120 mins',
     priceRange: '\$482 to \$514 NETT',
+    whatsappAPI:
+        'https://api.whatsapp.com/send/?phone=6597703610&text&app_absent=0',
     remarks: '50% off first trial*, 1-for-1 first trial*',
   ));
 
@@ -52,6 +57,8 @@ List<TreatmentItem> listTreatment() {
         'Milk and cookies? Try pure, gentle milk enzymes used in combination with advanced intense pulsed light technology to brighten, rejuvenate, and moisturise dull, dry skin.',
     duration: '120 mins',
     priceRange: '\$428 to \$560 NETT',
+    whatsappAPI:
+        'https://api.whatsapp.com/send/?phone=6597703610&text&app_absent=0',
     remarks: '50% off first trial*, 1-for-1 first trial*',
   ));
 
@@ -62,6 +69,8 @@ List<TreatmentItem> listTreatment() {
         'The Diamond Peel uses "diamond" tips to mechanically exfoliate dull skin. This facial is combined with advanced intense pulsed light technology to bring the bling to your skin.',
     duration: '120 mins',
     priceRange: '\$482 to \$514 NETT',
+    whatsappAPI:
+        'https://api.whatsapp.com/send/?phone=6597703610&text&app_absent=0',
     remarks: '50% off first trial*, 1-for-1 first trial*',
   ));
 
@@ -72,6 +81,8 @@ List<TreatmentItem> listTreatment() {
         'More than a satisfying breakfast, the calming and soothing benefits of oatmeal are paired with advanced intense pulse light to reduce skin redness and even out skin tone even for sensitive skin conditions.',
     duration: '120 mins',
     priceRange: '\$418 to \$450 NETT',
+    whatsappAPI:
+        'https://api.whatsapp.com/send/?phone=6597703610&text&app_absent=0',
     remarks: '50% off first trial*, 1-for-1 first trial*',
   ));
 
@@ -136,7 +147,9 @@ Widget getCardWidgets(List<TreatmentItem> items) {
                 SizedBox(height: 5),
                 Container(
                   child: OutlinedButton(
-                    onPressed: () {},
+                    onPressed: () => {
+                      launch(items[i].whatsappAPI),
+                    },
                     style: OutlinedButton.styleFrom(
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),

@@ -46,16 +46,17 @@ class TreatmentCarousel extends StatelessWidget {
                   Container(
                     padding: const EdgeInsets.all(0.0),
                     child: TextButton(
-                      onPressed: () {},
+                      onPressed: () =>
+                          {Navigator.pushNamed(context, '/treatment')},
                       child: Image.asset('assets/homepage/treatment_face.png'),
                     ),
-                    // child: Text('iOS'),
                   ),
                   Container(
                     padding: const EdgeInsets.all(0.0),
                     child: Container(
                       child: TextButton(
-                          onPressed: () {},
+                          onPressed: () =>
+                              {Navigator.pushNamed(context, '/treatment/eye')},
                           child: Image.asset(
                               'assets/homepage/treatment_eyes.png')),
                     ),
@@ -63,21 +64,27 @@ class TreatmentCarousel extends StatelessWidget {
                   Container(
                     padding: const EdgeInsets.all(0.0),
                     child: TextButton(
-                      onPressed: () {},
+                      onPressed: () => {
+                        {Navigator.pushNamed(context, '/treatment/neck')},
+                      },
                       child: Image.asset('assets/homepage/treatment_neck.png'),
                     ),
                   ),
                   Container(
                     padding: const EdgeInsets.all(0.0),
                     child: TextButton(
-                      onPressed: () {},
+                      onPressed: () => {
+                        {Navigator.pushNamed(context, '/treatment/body')},
+                      },
                       child: Image.asset('assets/homepage/treatment_body.png'),
                     ),
                   ),
                   Container(
                     padding: const EdgeInsets.all(0.0),
                     child: TextButton(
-                      onPressed: () {},
+                      onPressed: () => {
+                        {Navigator.pushNamed(context, '/treatment/hair')},
+                      },
                       child: Image.asset('assets/homepage/treatment_hair.png'),
                     ),
                   ),
