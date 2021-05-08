@@ -1,7 +1,7 @@
 import 'package:assignment/model/treatmentitem.dart';
 import 'package:flutter/material.dart';
 
-class Premium extends StatelessWidget {
+class Neck extends StatelessWidget {
   final List<TreatmentItem> treatList = listTreatment();
 
   @override
@@ -26,52 +26,52 @@ List<TreatmentItem> listTreatment() {
   List<TreatmentItem> myList = [];
 
   myList.add(TreatmentItem(
-    imageURL: 'assets/treatment/essential.png',
-    titleText: 'Pure Milk',
+    imageURL: 'assets/treatment/neck.png',
+    titleText: 'Electric Firming',
     bodyText:
-        'Milk does more than just build strong bones! The Pure Milk Facial uses a gentle Milk Peel with lactic acid derived from milk and fruits to help you achieve clearer, fairer and smoother skin, easily and effectively.',
-    duration: '90 minutes',
-    priceRange: '\$202 NETT',
+        'Troubled by a wrinkled neck? Our Electric Firming Neck Treatment uses smart vibration technology to stimulate the acupuncture points of the neck to promote skin metabolism and reduce neck wrinkles.',
+    duration: '50 minutes',
+    priceRange: '\$193 NETT',
     remarks: '50% off first trial*, 1-for-1 first trial*',
   ));
 
   myList.add(TreatmentItem(
-    imageURL: 'assets/treatment/AloeVera.png',
-    titleText: 'Aloe Vera',
+    imageURL: 'assets/treatment/OxyFirming.png',
+    titleText: 'OxyFirming',
     bodyText:
-        'A straightforward no frills facial to moisturise and soothe dry, tired skin. The Aloe Vera Facial is packed with antioxidants and enzymes that possess healing properties, collagen and hyaluronic acid boosting capabilities.',
-    duration: '90 mins',
-    priceRange: '\$202 NETT',
+        'OxyFirming uses OxyGeneo®, a patented 3-in-1 neck treatment that does 3 effective treatments simultaneously; exfoliation, oxygenation, and deep rejuvenation with the infusion of essential skin revitalising nutrients',
+    duration: '50 mins',
+    priceRange: '\$268 NETT',
     remarks: '50% off first trial*, 1-for-1 first trial*',
   ));
 
   myList.add(TreatmentItem(
-    imageURL: 'assets/treatment/oatmeal.png',
-    titleText: 'Oatmeal',
+    imageURL: 'assets/treatment/3rdgenrf.png',
+    titleText: '3rd Gen RF',
     bodyText:
-        'Did you know that Oatmeal is a natural and gentle exfoliant that has great anti-inflammatory, skin healing and antioxidant properties? Save yours for breakfast and let us help you with our Oatmeal Facial.',
-    duration: '90 mins',
-    priceRange: '\$169 NETT',
+        'Using TriPollar Radio Frequency, an innovative, proprietary 3rd generation Radio Frequency technology, the 3rd Gen RF delivers immediate visible neck firming effects with the first treatment with no downtime.',
+    duration: '50 mins',
+    priceRange: '\$268 NETT',
     remarks: '50% off first trial*, 1-for-1 first trial*',
   ));
 
   myList.add(TreatmentItem(
-    imageURL: 'assets/treatment/VitaminC.png',
-    titleText: 'Vitamin C Infusion',
+    imageURL: 'assets/treatment/csprf.png',
+    titleText: 'CSP RF',
     bodyText:
-        'Even out your skin tone and reduce the appearance of hyperpigmentation with the all-familiar Vitamin C Infusion Facial that defends against free radicals, boosts collagen production and reduces brown spots.',
-    duration: '90 mins',
+        'CSP RF is a non-invasive treatment to reduce fine lines and loose skin around the neck with results visible after just 30mins of the first session - perfect for that special dinner date later in the evening.',
+    duration: '50 mins',
+    priceRange: '\$212 NETT',
+    remarks: '50% off first trial*, 1-for-1 first trial*',
+  ));
+
+  myList.add(TreatmentItem(
+    imageURL: 'assets/treatment/GoldFirming.png',
+    titleText: 'Gold Firming',
+    bodyText:
+        'After using 3rd Generation radio frequency technology to stimulate collagen formation for reducing fine lines and loose skin around the neck, a luxurious gold mask is lathered on to impart a protective layer against free radicals.',
+    duration: '50 mins',
     priceRange: '\$288 NETT',
-    remarks: '50% off first trial*, 1-for-1 first trial*',
-  ));
-
-  myList.add(TreatmentItem(
-    imageURL: 'assets/treatment/customized.png',
-    titleText: 'Customised',
-    bodyText:
-        'If you don’t know what skin type you have – fret not. Our consultants are trained by our in-house doctors to perform a customised facial that recognises your skin type and needs.',
-    duration: '90 mins',
-    priceRange: '\$169 NETT',
     remarks: '50% off first trial*, 1-for-1 first trial*',
   ));
 

@@ -52,6 +52,47 @@ List<TreatmentCategories> listTreatmentCat() {
           'Spoil yourself (or your skin in this case) for once. Indulge in our premium facials to help you achieve that radiant glow!',
       locationURL: '/treatment/premium'));
 
+  myList.add(TreatmentCategories(
+      imageURL: 'assets/treatment/essential.png',
+      titleText: 'Essential Facials',
+      bodyText:
+          'Building good skin requires a strong foundation. Discover the essentials recommended by doctors for your skin. ',
+      locationURL: '/treatment/essential'));
+
+  myList.add(TreatmentCategories(
+      imageURL: 'assets/treatment/neck.png',
+      titleText: 'Neck Treatments',
+      bodyText:
+          'Up to your neck with double chin, loose skin & wrinkles? Let us help you catch a breather with our neck treatments.',
+      locationURL: '/treatment/neck'));
+
+  myList.add(TreatmentCategories(
+      imageURL: 'assets/treatment/eye.png',
+      titleText: 'Eye Treatments',
+      bodyText:
+          'Take care of your eyes - they are the stars that shine on your face. Reduce dark circles, droopy & puffy eyes with our eye treatments.',
+      locationURL: '/treatment/eye'));
+
+  myList.add(TreatmentCategories(
+      imageURL: 'assets/treatment/body.png',
+      titleText: 'Body Treatments',
+      bodyText:
+          'Take care of your eyes - they are the stars that shine on your face. Reduce dark circles, droopy & puffy eyes with our eye treatments.',
+      locationURL: '/treatment/body'));
+
+  myList.add(TreatmentCategories(
+      imageURL: 'assets/treatment/back.png',
+      titleText: 'Back Treatments',
+      bodyText:
+          'Take care of your eyes - they are the stars that shine on your face. Reduce dark circles, droopy & puffy eyes with our eye treatments.',
+      locationURL: '/treatment/back'));
+
+  myList.add(TreatmentCategories(
+      imageURL: 'assets/treatment/hair.png',
+      titleText: 'Hair Removal',
+      bodyText:
+          'Hairy issues? Let us help you resolve them with treatments like I2PL Hair Removal.',
+      locationURL: '/treatment/hair'));
   return myList;
 }
 

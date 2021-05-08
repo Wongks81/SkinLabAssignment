@@ -1,7 +1,7 @@
 import 'package:assignment/model/treatmentitem.dart';
 import 'package:flutter/material.dart';
 
-class Premium extends StatelessWidget {
+class Back extends StatelessWidget {
   final List<TreatmentItem> treatList = listTreatment();
 
   @override
@@ -26,52 +26,32 @@ List<TreatmentItem> listTreatment() {
   List<TreatmentItem> myList = [];
 
   myList.add(TreatmentItem(
-    imageURL: 'assets/treatment/essential.png',
-    titleText: 'Pure Milk',
+    imageURL: 'assets/treatment/back.png',
+    titleText: 'Medical Peel & I2PL',
     bodyText:
-        'Milk does more than just build strong bones! The Pure Milk Facial uses a gentle Milk Peel with lactic acid derived from milk and fruits to help you achieve clearer, fairer and smoother skin, easily and effectively.',
-    duration: '90 minutes',
-    priceRange: '\$202 NETT',
+        'Brighten and achieve glass skin on your back with this dynamic duo backed by doctors - the combination of medical-grade chemical peels and advanced intense pulsed light technology.',
+    duration: '60 to 90 minutes',
+    priceRange: '\$589 to \$696 NETT',
     remarks: '50% off first trial*, 1-for-1 first trial*',
   ));
 
   myList.add(TreatmentItem(
-    imageURL: 'assets/treatment/AloeVera.png',
-    titleText: 'Aloe Vera',
+    imageURL: 'assets/treatment/MedicalPeel_back.png',
+    titleText: 'Medical Peel',
     bodyText:
-        'A straightforward no frills facial to moisturise and soothe dry, tired skin. The Aloe Vera Facial is packed with antioxidants and enzymes that possess healing properties, collagen and hyaluronic acid boosting capabilities.',
-    duration: '90 mins',
-    priceRange: '\$202 NETT',
+        'Our most popular treatment - the Signature Medical Peel developed by our in-house doctors uses a combination of AHAs/BHAs for treating ageing skin, acne/blemish-prone skin, as well as mild pigmentation on the back.',
+    duration: '60 to 120 mins',
+    priceRange: '\$482 to \$696 NETT',
     remarks: '50% off first trial*, 1-for-1 first trial*',
   ));
 
   myList.add(TreatmentItem(
-    imageURL: 'assets/treatment/oatmeal.png',
-    titleText: 'Oatmeal',
+    imageURL: 'assets/treatment/DiamondPeel_back.png',
+    titleText: 'Diamond Peel',
     bodyText:
-        'Did you know that Oatmeal is a natural and gentle exfoliant that has great anti-inflammatory, skin healing and antioxidant properties? Save yours for breakfast and let us help you with our Oatmeal Facial.',
-    duration: '90 mins',
-    priceRange: '\$169 NETT',
-    remarks: '50% off first trial*, 1-for-1 first trial*',
-  ));
-
-  myList.add(TreatmentItem(
-    imageURL: 'assets/treatment/VitaminC.png',
-    titleText: 'Vitamin C Infusion',
-    bodyText:
-        'Even out your skin tone and reduce the appearance of hyperpigmentation with the all-familiar Vitamin C Infusion Facial that defends against free radicals, boosts collagen production and reduces brown spots.',
-    duration: '90 mins',
-    priceRange: '\$288 NETT',
-    remarks: '50% off first trial*, 1-for-1 first trial*',
-  ));
-
-  myList.add(TreatmentItem(
-    imageURL: 'assets/treatment/customized.png',
-    titleText: 'Customised',
-    bodyText:
-        'If you don’t know what skin type you have – fret not. Our consultants are trained by our in-house doctors to perform a customised facial that recognises your skin type and needs.',
-    duration: '90 mins',
-    priceRange: '\$169 NETT',
+        'To bring your sexy back, the Diamond Peel uses an abrasive diamond tip that gently loosens the dead cells, dirt, and debris while the wand’s suction function vacuums them away simultaneously.',
+    duration: '45 to 60 mins',
+    priceRange: '\$202 to \$244 NETT',
     remarks: '50% off first trial*, 1-for-1 first trial*',
   ));
 

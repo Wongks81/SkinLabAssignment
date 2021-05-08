@@ -1,7 +1,7 @@
 import 'package:assignment/model/treatmentitem.dart';
 import 'package:flutter/material.dart';
 
-class Premium extends StatelessWidget {
+class Essential extends StatelessWidget {
   final List<TreatmentItem> treatList = listTreatment();
 
   @override
@@ -26,52 +26,72 @@ List<TreatmentItem> listTreatment() {
   List<TreatmentItem> myList = [];
 
   myList.add(TreatmentItem(
-    imageURL: 'assets/treatment/essential.png',
-    titleText: 'Pure Milk',
+    imageURL: 'assets/treatment/premium.png',
+    titleText: 'Laser Lift',
     bodyText:
-        'Milk does more than just build strong bones! The Pure Milk Facial uses a gentle Milk Peel with lactic acid derived from milk and fruits to help you achieve clearer, fairer and smoother skin, easily and effectively.',
-    duration: '90 minutes',
-    priceRange: '\$202 NETT',
+        'This powerhouse of a facial combines 3 key technologies to boost hydration levels, collagen production and skin cell regeneration - Low Level Laser Therapy, Galvanic Current and Lymphatic Drainage.',
+    duration: '120 minutes',
+    priceRange: '\$426 NETT',
     remarks: '50% off first trial*, 1-for-1 first trial*',
   ));
 
   myList.add(TreatmentItem(
-    imageURL: 'assets/treatment/AloeVera.png',
-    titleText: 'Aloe Vera',
+    imageURL: 'assets/treatment/Oxygeno.png',
+    titleText: 'OxyGeneo® Carbon Intense',
     bodyText:
-        'A straightforward no frills facial to moisturise and soothe dry, tired skin. The Aloe Vera Facial is packed with antioxidants and enzymes that possess healing properties, collagen and hyaluronic acid boosting capabilities.',
-    duration: '90 mins',
-    priceRange: '\$202 NETT',
+        'The OxyGeneo® Carbon Intense Facial is a patented and clinically proven treatment that purifies and soothes oily skin, while improving its texture and appearance.',
+    duration: '120 mins',
+    priceRange: '\$589 NETT',
     remarks: '50% off first trial*, 1-for-1 first trial*',
   ));
 
   myList.add(TreatmentItem(
-    imageURL: 'assets/treatment/oatmeal.png',
-    titleText: 'Oatmeal',
+    imageURL: 'assets/treatment/DermaRoller.png',
+    titleText: 'Derma Roller',
     bodyText:
-        'Did you know that Oatmeal is a natural and gentle exfoliant that has great anti-inflammatory, skin healing and antioxidant properties? Save yours for breakfast and let us help you with our Oatmeal Facial.',
+        'The Derma Roller Facial gently rolls sterile fine needles across the treatment area to create micro-wounds - stimulating collagen and elastin production that help with fine lines, wrinkles and mild acne scars.',
     duration: '90 mins',
-    priceRange: '\$169 NETT',
+    priceRange: '\$375 NETT',
     remarks: '50% off first trial*, 1-for-1 first trial*',
   ));
 
   myList.add(TreatmentItem(
-    imageURL: 'assets/treatment/VitaminC.png',
-    titleText: 'Vitamin C Infusion',
+    imageURL: 'assets/treatment/gold.png',
+    titleText: 'Gold',
     bodyText:
-        'Even out your skin tone and reduce the appearance of hyperpigmentation with the all-familiar Vitamin C Infusion Facial that defends against free radicals, boosts collagen production and reduces brown spots.',
-    duration: '90 mins',
-    priceRange: '\$288 NETT',
+        'True to its name, gold has anti-inflammatory properties that is very valuable for many skin concerns. This rare, inert metal can reduce skin redness, and protect against free radicals that lead to wrinkles and sun damage.',
+    duration: '120 mins',
+    priceRange: '\$426 NETT',
     remarks: '50% off first trial*, 1-for-1 first trial*',
   ));
 
   myList.add(TreatmentItem(
-    imageURL: 'assets/treatment/customized.png',
-    titleText: 'Customised',
+    imageURL: 'assets/treatment/PumpkinGlow.png',
+    titleText: 'Pumpkin Glow',
     bodyText:
-        'If you don’t know what skin type you have – fret not. Our consultants are trained by our in-house doctors to perform a customised facial that recognises your skin type and needs.',
+        'Say hello to radiant skin with our combination of an advanced exfoliating system and the nourishing capabilities of the humble pumpkin to give you a skin that’s brighter, smoothened, lifted - the perfect glow your skin deserves.',
     duration: '90 mins',
-    priceRange: '\$169 NETT',
+    priceRange: '\$460 NETT',
+    remarks: '50% off first trial*, 1-for-1 first trial*',
+  ));
+
+  myList.add(TreatmentItem(
+    imageURL: 'assets/treatment/PepTidePerfect.png',
+    titleText: 'Peptide Perfect',
+    bodyText:
+        'This ultimate skin rejuvenation and whitening facial with 50X the power of vitamin C that blocks melanin formation and harmful oxidation, instantly brightening, hydrating, and evening out skin tone.',
+    duration: '120 mins',
+    priceRange: '\$426 NETT',
+    remarks: '50% off first trial*, 1-for-1 first trial*',
+  ));
+
+  myList.add(TreatmentItem(
+    imageURL: 'assets/treatment/MicroMassage.png',
+    titleText: 'Local Dynamic Micro-massage',
+    bodyText:
+        'Using dual-frequency ultrasound technology, Local Dynamic Micro-massage (LDM) effectively activates fibroblasts to boost collagen and hyaluronic acid regeneration, instantly lifting and firming the skin.',
+    duration: '90 mins',
+    priceRange: '\$398 NETT',
     remarks: '50% off first trial*, 1-for-1 first trial*',
   ));
 
