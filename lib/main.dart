@@ -4,6 +4,7 @@ import 'package:assignment/treatment/pages/signature.dart';
 import 'package:flutter/material.dart';
 
 import 'treatment/pages/combo.dart';
+import 'treatment/pages/premium.dart';
 import 'treatment/pages/specialty.dart';
 import 'treatment/treatment.dart';
 
@@ -26,6 +27,7 @@ class MyApp extends StatelessWidget {
         '/treatment/combo': (context) => Combo(),
         '/treatment/specialty': (context) => Specialty(),
         '/treatment/signature': (context) => Signature(),
+        '/treatment/premium': (context) => Premium(),
       },
     );
   }
