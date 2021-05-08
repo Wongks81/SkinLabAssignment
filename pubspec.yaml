@@ -29,10 +29,15 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   carousel_slider: ^2.2.1
+  
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  dio: ^3.0.8
+  path_provider: ^2.0.1
+  file_utils: ^1.0.0
+  
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -50,10 +55,11 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-   - assets/
+   - assets/prices.pdf
    - assets/homepage/
    - assets/about/
    - assets/treatment/
+   - assets/prices/
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

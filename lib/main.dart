@@ -1,6 +1,6 @@
 import 'package:assignment/about/about.dart';
 import 'package:assignment/homepage/homepage.dart';
-import 'package:assignment/prices.dart';
+import 'package:assignment/prices/prices.dart';
 import 'package:assignment/treatment/pages/back.dart';
 import 'package:assignment/treatment/pages/essential.dart';
 import 'package:assignment/treatment/pages/eye.dart';
