@@ -1,4 +1,5 @@
 import 'package:assignment/treatment/combo_facial.dart';
+import 'package:assignment/treatment/signature_facial.dart';
 import 'package:assignment/treatment/specialty_facial.dart';
 import 'package:flutter/material.dart';
 
@@ -14,10 +15,11 @@ class Treatment extends StatelessWidget {
             fit: BoxFit.contain),
         backgroundColor: Colors.yellow[50],
       ),
-      body: Column(
+      body: ListView(
         children: [
           ComboFacial(),
           SpecialtyFacial(),
+          SignatureFacial(),
         ],
       ),
     );

@@ -1,9 +1,8 @@
-import 'package:assignment/block/treatment.dart';
 import 'package:assignment/model/treatmentitem.dart';
 import 'package:flutter/material.dart';
 
 class Specialty extends StatelessWidget {
-  List<TreatmentItem> treatList = listTreatment();
+  final List<TreatmentItem> treatList = listTreatment();
 
   @override
   Widget build(BuildContext context) {
@@ -32,6 +31,56 @@ List<TreatmentItem> listTreatment() {
         'Hailing from Lumenis, the inventor of IPL, is the FDA-approved M22 Laser system. It is the gold-standard for IPL photorejuvenation and the treatment of pigmentation, mild to moderate acne, and many more skin concerns.',
     duration: '60 mins',
     priceRange: '\$380 NETT',
+    remarks: '50% off first trial*, 1-for-1 first trial*',
+  ));
+
+  myList.add(TreatmentItem(
+    imageURL: 'assets/treatment/i2pl.png',
+    titleText: 'I2PL Photorejuvenation',
+    bodyText:
+        'Widely accepted in the industry as the gold standard for skin rejuvenation, our I2PL is a level up from older IPL technologies and FDA-approved with the added benefit of lightening pigmentation.',
+    duration: '60 to 90 mins',
+    priceRange: '\$300 to \$408 NETT',
+    remarks: '50% off first trial*, 1-for-1 first trial*',
+  ));
+
+  myList.add(TreatmentItem(
+    imageURL: 'assets/treatment/3rdgenrf.png',
+    titleText: '3rd Gen RF',
+    bodyText:
+        'Using TriPollar Radio Frequency, an innovative, proprietary 3rd generation Radio Frequency technology, the 3rd Gen RF delivers immediate visible facial contouring effects with the first treatment with no downtime.',
+    duration: '60 to 120 mins',
+    priceRange: '\$482 to \$696 NETT',
+    remarks: '50% off first trial*, 1-for-1 first trial*',
+  ));
+
+  myList.add(TreatmentItem(
+    imageURL: 'assets/treatment/csprf.png',
+    titleText: 'CSP RF',
+    bodyText:
+        'CSP RF is a non-invasive treatment to tighten and contour skin with results visible after just 30mins of the first session - perfect  for that special dinner date later in the evening.',
+    duration: '60 to 120 mins',
+    priceRange: '\$426 to \$589 NETT',
+    remarks: '50% off first trial*, 1-for-1 first trial*',
+  ));
+
+  myList.add(TreatmentItem(
+    imageURL: 'assets/treatment/oxybright.png',
+    titleText: 'OxyBright',
+    bodyText:
+        'The OxyBright Facial (featuring OxyGeneo® technology) is a patented and clinically proven treatment that gives skin incredible skin nourishment and oxygenation, for smoother and younger looking skin.',
+    duration: '60 to 120 mins',
+    priceRange: '\$375 to \$589 NETT',
+    remarks: '50% off first trial*, 1-for-1 first trial*',
+  ));
+
+  myList.add(TreatmentItem(
+    imageURL: 'assets/treatment/vface.png',
+    titleText: 'Liftera V-Face',
+    bodyText:
+        'More a face lifting treatment than a facial, the Liftera V-Face uses clinically proven technologies – HIFU and TDT to reach into the deeper layers of the skin to stimulate collagen and elastin production.',
+    duration: '60 mins',
+    priceRange: '\$859 NETT',
     remarks: '50% off first trial*, 1-for-1 first trial*',
   ));
 

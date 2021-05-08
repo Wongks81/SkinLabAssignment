@@ -1,9 +1,10 @@
 import 'package:assignment/about/about.dart';
 import 'package:assignment/homepage/homepage.dart';
-import 'package:assignment/treatment/combo/combo.dart';
-import 'package:assignment/treatment/specialty/specialty.dart';
+import 'package:assignment/treatment/pages/signature.dart';
 import 'package:flutter/material.dart';
 
+import 'treatment/pages/combo.dart';
+import 'treatment/pages/specialty.dart';
 import 'treatment/treatment.dart';
 
 void main() {
@@ -24,6 +25,7 @@ class MyApp extends StatelessWidget {
         '/treatment': (context) => Treatment(),
         '/treatment/combo': (context) => Combo(),
         '/treatment/specialty': (context) => Specialty(),
+        '/treatment/signature': (context) => Signature(),
       },
     );
   }
