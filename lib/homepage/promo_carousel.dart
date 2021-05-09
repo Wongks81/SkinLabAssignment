@@ -23,7 +23,9 @@ class PromoCarousel extends StatelessWidget {
             child: Container(
               child: TextButton(
                   // navigate to shop
-                  onPressed: () {},
+                  onPressed: () => {
+                        Navigator.pushNamed(context, '/shop'),
+                      },
                   child: Image.asset('assets/homepage/promo1.png')),
             ),
           ),

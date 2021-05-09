@@ -1,8 +1,9 @@
+import 'package:assignment/data/treatmentitems.dart';
 import 'package:assignment/model/treatmentitem.dart';
 import 'package:flutter/material.dart';
 
 class Back extends StatelessWidget {
-  final List<TreatmentItem> treatList = listTreatment();
+  final List<TreatmentItem> treatList = listBackTreatment();
 
   @override
   Widget build(BuildContext context) {
@@ -18,44 +19,6 @@ class Back extends StatelessWidget {
       body: getCardWidgets(treatList),
     );
   }
-}
-
-// records of the treatments
-// can be updated if connected to a DB
-List<TreatmentItem> listTreatment() {
-  List<TreatmentItem> myList = [];
-
-  myList.add(TreatmentItem(
-    imageURL: 'assets/treatment/back.png',
-    titleText: 'Medical Peel & I2PL',
-    bodyText:
-        'Brighten and achieve glass skin on your back with this dynamic duo backed by doctors - the combination of medical-grade chemical peels and advanced intense pulsed light technology.',
-    duration: '60 to 90 minutes',
-    priceRange: '\$589 to \$696 NETT',
-    remarks: '50% off first trial*, 1-for-1 first trial*',
-  ));
-
-  myList.add(TreatmentItem(
-    imageURL: 'assets/treatment/MedicalPeel_back.png',
-    titleText: 'Medical Peel',
-    bodyText:
-        'Our most popular treatment - the Signature Medical Peel developed by our in-house doctors uses a combination of AHAs/BHAs for treating ageing skin, acne/blemish-prone skin, as well as mild pigmentation on the back.',
-    duration: '60 to 120 mins',
-    priceRange: '\$482 to \$696 NETT',
-    remarks: '50% off first trial*, 1-for-1 first trial*',
-  ));
-
-  myList.add(TreatmentItem(
-    imageURL: 'assets/treatment/DiamondPeel_back.png',
-    titleText: 'Diamond Peel',
-    bodyText:
-        'To bring your sexy back, the Diamond Peel uses an abrasive diamond tip that gently loosens the dead cells, dirt, and debris while the wand’s suction function vacuums them away simultaneously.',
-    duration: '45 to 60 mins',
-    priceRange: '\$202 to \$244 NETT',
-    remarks: '50% off first trial*, 1-for-1 first trial*',
-  ));
-
-  return myList;
 }
 
 Widget getCardWidgets(List<TreatmentItem> items) {

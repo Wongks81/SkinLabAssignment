@@ -1,8 +1,9 @@
+import 'package:assignment/data/treatmentitems.dart';
 import 'package:assignment/model/treatmentitem.dart';
 import 'package:flutter/material.dart';
 
 class Hair extends StatelessWidget {
-  final List<TreatmentItem> treatList = listTreatment();
+  final List<TreatmentItem> treatList = listHairTreatment();
 
   @override
   Widget build(BuildContext context) {
@@ -18,24 +19,6 @@ class Hair extends StatelessWidget {
       body: getCardWidgets(treatList),
     );
   }
-}
-
-// records of the treatments
-// can be updated if connected to a DB
-List<TreatmentItem> listTreatment() {
-  List<TreatmentItem> myList = [];
-
-  myList.add(TreatmentItem(
-    imageURL: 'assets/treatment/hair.png',
-    titleText: 'I2PL Hair Removal',
-    bodyText:
-        'Widely accepted in the industry as the gold standard for hair removal, our I2PL is a level up from older IPL technologies and FDA-approved with the added benefit of lightening pigmentation.',
-    duration: '30 to 90 mins',
-    priceRange: '\$148 to \$803 NETT',
-    remarks: '50% off first trial*, 1-for-1 first trial*',
-  ));
-
-  return myList;
 }
 
 Widget getCardWidgets(List<TreatmentItem> items) {

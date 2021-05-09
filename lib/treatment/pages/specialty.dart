@@ -1,8 +1,10 @@
+import 'package:assignment/data/treatmentitems.dart';
 import 'package:assignment/model/treatmentitem.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Specialty extends StatelessWidget {
-  final List<TreatmentItem> treatList = listTreatment();
+  final List<TreatmentItem> treatList = listSpecialtyTreatment();
 
   @override
   Widget build(BuildContext context) {
@@ -15,91 +17,12 @@ class Specialty extends StatelessWidget {
             fit: BoxFit.contain),
         backgroundColor: Colors.yellow[50],
       ),
-      body: getCardWidgets(treatList),
+      body: getCardWidgets(treatList, context),
     );
   }
 }
 
-// records of the treatments
-List<TreatmentItem> listTreatment() {
-  List<TreatmentItem> myList = [];
-
-  myList.add(TreatmentItem(
-    imageURL: 'assets/treatment/specialty.png',
-    titleText: 'Lumenis M22TM Laser',
-    bodyText:
-        'Hailing from Lumenis, the inventor of IPL, is the FDA-approved M22 Laser system. It is the gold-standard for IPL photorejuvenation and the treatment of pigmentation, mild to moderate acne, and many more skin concerns.',
-    duration: '60 mins',
-    priceRange: '\$380 NETT',
-    whatsappAPI:
-        'https://api.whatsapp.com/send/?phone=6597703610&text&app_absent=0',
-    remarks: '50% off first trial*, 1-for-1 first trial*',
-  ));
-
-  myList.add(TreatmentItem(
-    imageURL: 'assets/treatment/i2pl.png',
-    titleText: 'I2PL Photorejuvenation',
-    bodyText:
-        'Widely accepted in the industry as the gold standard for skin rejuvenation, our I2PL is a level up from older IPL technologies and FDA-approved with the added benefit of lightening pigmentation.',
-    duration: '60 to 90 mins',
-    priceRange: '\$300 to \$408 NETT',
-    whatsappAPI:
-        'https://api.whatsapp.com/send/?phone=6597703610&text&app_absent=0',
-    remarks: '50% off first trial*, 1-for-1 first trial*',
-  ));
-
-  myList.add(TreatmentItem(
-    imageURL: 'assets/treatment/3rdgenrf.png',
-    titleText: '3rd Gen RF',
-    bodyText:
-        'Using TriPollar Radio Frequency, an innovative, proprietary 3rd generation Radio Frequency technology, the 3rd Gen RF delivers immediate visible facial contouring effects with the first treatment with no downtime.',
-    duration: '60 to 120 mins',
-    priceRange: '\$482 to \$696 NETT',
-    whatsappAPI:
-        'https://api.whatsapp.com/send/?phone=6597703610&text&app_absent=0',
-    remarks: '50% off first trial*, 1-for-1 first trial*',
-  ));
-
-  myList.add(TreatmentItem(
-    imageURL: 'assets/treatment/csprf.png',
-    titleText: 'CSP RF',
-    bodyText:
-        'CSP RF is a non-invasive treatment to tighten and contour skin with results visible after just 30mins of the first session - perfect  for that special dinner date later in the evening.',
-    duration: '60 to 120 mins',
-    priceRange: '\$426 to \$589 NETT',
-    whatsappAPI:
-        'https://api.whatsapp.com/send/?phone=6597703610&text&app_absent=0',
-    remarks: '50% off first trial*, 1-for-1 first trial*',
-  ));
-
-  myList.add(TreatmentItem(
-    imageURL: 'assets/treatment/oxybright.png',
-    titleText: 'OxyBright',
-    bodyText:
-        'The OxyBright Facial (featuring OxyGeneo® technology) is a patented and clinically proven treatment that gives skin incredible skin nourishment and oxygenation, for smoother and younger looking skin.',
-    duration: '60 to 120 mins',
-    priceRange: '\$375 to \$589 NETT',
-    whatsappAPI:
-        'https://api.whatsapp.com/send/?phone=6597703610&text&app_absent=0',
-    remarks: '50% off first trial*, 1-for-1 first trial*',
-  ));
-
-  myList.add(TreatmentItem(
-    imageURL: 'assets/treatment/vface.png',
-    titleText: 'Liftera V-Face',
-    bodyText:
-        'More a face lifting treatment than a facial, the Liftera V-Face uses clinically proven technologies – HIFU and TDT to reach into the deeper layers of the skin to stimulate collagen and elastin production.',
-    duration: '60 mins',
-    priceRange: '\$859 NETT',
-    whatsappAPI:
-        'https://api.whatsapp.com/send/?phone=6597703610&text&app_absent=0',
-    remarks: '50% off first trial*, 1-for-1 first trial*',
-  ));
-
-  return myList;
-}
-
-Widget getCardWidgets(List<TreatmentItem> items) {
+Widget getCardWidgets(List<TreatmentItem> items, BuildContext context) {
   List<Widget> list = [];
   for (var i = 0; i < items.length; i++) {
     list.add(Card(
@@ -155,24 +78,78 @@ Widget getCardWidgets(List<TreatmentItem> items) {
                   ],
                 ),
                 SizedBox(height: 5),
-                Container(
-                  child: OutlinedButton(
-                    onPressed: () {},
-                    style: OutlinedButton.styleFrom(
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10),
+                Row(
+                  children: [
+                    // Remove details for now
+                    // Expanded(
+                    //   flex: 2,
+                    //   child: OutlinedButton(
+                    //     onPressed: () => {
+                    //       Navigator.pushNamed(
+                    //           context, items[i].detailsPageRoute)
+                    //     },
+                    //     style: OutlinedButton.styleFrom(
+                    //       shape: RoundedRectangleBorder(
+                    //         borderRadius: BorderRadius.circular(10),
+                    //       ),
+                    //       side: BorderSide(width: 2, color: Colors.brown[300]),
+                    //     ),
+                    //     child: Text(
+                    //       'DETAILS',
+                    //       style: TextStyle(
+                    //         fontSize: 16,
+                    //         color: Colors.brown[300],
+                    //         fontWeight: FontWeight.bold,
+                    //       ),
+                    //     ),
+                    //   ),
+                    // ),
+                    SizedBox(width: 5),
+                    Expanded(
+                      flex: 2,
+                      child: OutlinedButton(
+                        onPressed: () => {
+                          launch(items[i].whatsappAPI),
+                        },
+                        style: OutlinedButton.styleFrom(
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          side: BorderSide(width: 2, color: Colors.brown[300]),
+                        ),
+                        child: Text(
+                          'BOOK NOW',
+                          style: TextStyle(
+                            fontSize: 16,
+                            color: Colors.brown[300],
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
                       ),
-                      side: BorderSide(width: 2, color: Colors.brown[300]),
                     ),
-                    child: Text(
-                      'BOOK NOW',
-                      style: TextStyle(
-                        fontSize: 18,
-                        color: Colors.brown[300],
-                        fontWeight: FontWeight.bold,
+                    SizedBox(width: 5),
+                    Expanded(
+                      flex: 2,
+                      child: OutlinedButton(
+                        // Route to Shop
+                        onPressed: () {},
+                        style: OutlinedButton.styleFrom(
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          side: BorderSide(width: 2, color: Colors.brown[300]),
+                        ),
+                        child: Text(
+                          'SHOP',
+                          style: TextStyle(
+                            fontSize: 16,
+                            color: Colors.brown[300],
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
                       ),
                     ),
-                  ),
+                  ],
                 ),
               ],
             ),

@@ -1,8 +1,9 @@
+import 'package:assignment/data/treatmentitems.dart';
 import 'package:assignment/model/treatmentitem.dart';
 import 'package:flutter/material.dart';
 
 class Body extends StatelessWidget {
-  final List<TreatmentItem> treatList = listTreatment();
+  final List<TreatmentItem> treatList = listBodyTreatment();
 
   @override
   Widget build(BuildContext context) {
@@ -18,34 +19,6 @@ class Body extends StatelessWidget {
       body: getCardWidgets(treatList),
     );
   }
-}
-
-// records of the treatments
-// can be updated if connected to a DB
-List<TreatmentItem> listTreatment() {
-  List<TreatmentItem> myList = [];
-
-  myList.add(TreatmentItem(
-    imageURL: 'assets/treatment/body.png',
-    titleText: '3rd Gen RF',
-    bodyText:
-        'Using TriPollar Radio Frequency, an innovative, proprietary 3rd generation Radio Frequency technology, the 3rd Gen RF delivers immediate visible body slimming effects with the first treatment with no downtime.',
-    duration: '60 to 80 minutes',
-    priceRange: '\$589 to \$696 NETT',
-    remarks: '50% off first trial*, 1-for-1 first trial*',
-  ));
-
-  myList.add(TreatmentItem(
-    imageURL: 'assets/treatment/csprf_body.png',
-    titleText: 'CSP RF',
-    bodyText:
-        'CSP RF is a non-invasive treatment to tighten and contour the body with results visible after just 30mins of the first session - perfect for that special dinner date later in the evening.',
-    duration: '80 mins',
-    priceRange: '\$426 NETT',
-    remarks: '50% off first trial*, 1-for-1 first trial*',
-  ));
-
-  return myList;
 }
 
 Widget getCardWidgets(List<TreatmentItem> items) {

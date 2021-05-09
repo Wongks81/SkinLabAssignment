@@ -7,6 +7,7 @@ class TreatmentItem {
   String whatsappAPI;
   String detailsPageRoute;
   String shopRoute;
+  String categories;
   String remarks;
 
   TreatmentItem(
@@ -18,6 +19,7 @@ class TreatmentItem {
       String whatsappAPI,
       String detailsPageRoute,
       String shopRoute,
+      String categories,
       String remarks}) {
     this.imageURL = imageURL;
     this.titleText = titleText;
@@ -27,6 +29,7 @@ class TreatmentItem {
     this.whatsappAPI = whatsappAPI;
     this.detailsPageRoute = detailsPageRoute;
     this.shopRoute = shopRoute;
+    this.categories = categories;
     this.remarks = remarks;
   }
 }

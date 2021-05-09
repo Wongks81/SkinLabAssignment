@@ -1,8 +1,9 @@
+import 'package:assignment/data/treatmentitems.dart';
 import 'package:assignment/model/treatmentitem.dart';
 import 'package:flutter/material.dart';
 
 class Neck extends StatelessWidget {
-  final List<TreatmentItem> treatList = listTreatment();
+  final List<TreatmentItem> treatList = listNeckTreatment();
 
   @override
   Widget build(BuildContext context) {
@@ -18,64 +19,6 @@ class Neck extends StatelessWidget {
       body: getCardWidgets(treatList),
     );
   }
-}
-
-// records of the treatments
-// can be updated if connected to a DB
-List<TreatmentItem> listTreatment() {
-  List<TreatmentItem> myList = [];
-
-  myList.add(TreatmentItem(
-    imageURL: 'assets/treatment/neck.png',
-    titleText: 'Electric Firming',
-    bodyText:
-        'Troubled by a wrinkled neck? Our Electric Firming Neck Treatment uses smart vibration technology to stimulate the acupuncture points of the neck to promote skin metabolism and reduce neck wrinkles.',
-    duration: '50 minutes',
-    priceRange: '\$193 NETT',
-    remarks: '50% off first trial*, 1-for-1 first trial*',
-  ));
-
-  myList.add(TreatmentItem(
-    imageURL: 'assets/treatment/OxyFirming.png',
-    titleText: 'OxyFirming',
-    bodyText:
-        'OxyFirming uses OxyGeneo®, a patented 3-in-1 neck treatment that does 3 effective treatments simultaneously; exfoliation, oxygenation, and deep rejuvenation with the infusion of essential skin revitalising nutrients',
-    duration: '50 mins',
-    priceRange: '\$268 NETT',
-    remarks: '50% off first trial*, 1-for-1 first trial*',
-  ));
-
-  myList.add(TreatmentItem(
-    imageURL: 'assets/treatment/3rdgenrf.png',
-    titleText: '3rd Gen RF',
-    bodyText:
-        'Using TriPollar Radio Frequency, an innovative, proprietary 3rd generation Radio Frequency technology, the 3rd Gen RF delivers immediate visible neck firming effects with the first treatment with no downtime.',
-    duration: '50 mins',
-    priceRange: '\$268 NETT',
-    remarks: '50% off first trial*, 1-for-1 first trial*',
-  ));
-
-  myList.add(TreatmentItem(
-    imageURL: 'assets/treatment/csprf.png',
-    titleText: 'CSP RF',
-    bodyText:
-        'CSP RF is a non-invasive treatment to reduce fine lines and loose skin around the neck with results visible after just 30mins of the first session - perfect for that special dinner date later in the evening.',
-    duration: '50 mins',
-    priceRange: '\$212 NETT',
-    remarks: '50% off first trial*, 1-for-1 first trial*',
-  ));
-
-  myList.add(TreatmentItem(
-    imageURL: 'assets/treatment/GoldFirming.png',
-    titleText: 'Gold Firming',
-    bodyText:
-        'After using 3rd Generation radio frequency technology to stimulate collagen formation for reducing fine lines and loose skin around the neck, a luxurious gold mask is lathered on to impart a protective layer against free radicals.',
-    duration: '50 mins',
-    priceRange: '\$288 NETT',
-    remarks: '50% off first trial*, 1-for-1 first trial*',
-  ));
-
-  return myList;
 }
 
 Widget getCardWidgets(List<TreatmentItem> items) {

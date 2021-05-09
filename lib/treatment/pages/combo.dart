@@ -1,9 +1,10 @@
+import 'package:assignment/data/treatmentitems.dart';
 import 'package:assignment/model/treatmentitem.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class Combo extends StatelessWidget {
-  final List<TreatmentItem> treatList = listTreatment();
+  final List<TreatmentItem> treatList = listComboTreatment();
 
   @override
   Widget build(BuildContext context) {
@@ -19,74 +20,6 @@ class Combo extends StatelessWidget {
       body: getCardWidgets(treatList),
     );
   }
-}
-
-// records of the treatments
-// can be updated if connected to a DB
-List<TreatmentItem> listTreatment() {
-  List<TreatmentItem> myList = [];
-
-  myList.add(TreatmentItem(
-    imageURL: 'assets/treatment/combo.png',
-    titleText: 'Signature Medical Peel & I2PL',
-    bodyText:
-        'Brighten and achieve glass skin with this dynamic duo backed by doctors - the combination of medical-grade chemical peels and advanced intense pulsed light technology.',
-    duration: '120 mins',
-    priceRange: '\$482 to \$514 NETT',
-    whatsappAPI:
-        'https://api.whatsapp.com/send/?phone=6597703610&text&app_absent=0',
-    remarks: '50% off first trial*, 1-for-1 first trial*',
-  ));
-
-  myList.add(TreatmentItem(
-    imageURL: 'assets/treatment/aquapeel.png',
-    titleText: 'Aqua Peel & I2PL',
-    bodyText:
-        'Pairing our Aqua Peel Facial using the patented Aqua ST peeling system that exfoliates and infuses topical solution simultaneously, together with advanced intense pulsed light technology for an all-rounded skin revival.',
-    duration: '120 mins',
-    priceRange: '\$482 to \$514 NETT',
-    whatsappAPI:
-        'https://api.whatsapp.com/send/?phone=6597703610&text&app_absent=0',
-    remarks: '50% off first trial*, 1-for-1 first trial*',
-  ));
-
-  myList.add(TreatmentItem(
-    imageURL: 'assets/treatment/milkpeel.png',
-    titleText: 'Milk Peel & I2PL',
-    bodyText:
-        'Milk and cookies? Try pure, gentle milk enzymes used in combination with advanced intense pulsed light technology to brighten, rejuvenate, and moisturise dull, dry skin.',
-    duration: '120 mins',
-    priceRange: '\$428 to \$560 NETT',
-    whatsappAPI:
-        'https://api.whatsapp.com/send/?phone=6597703610&text&app_absent=0',
-    remarks: '50% off first trial*, 1-for-1 first trial*',
-  ));
-
-  myList.add(TreatmentItem(
-    imageURL: 'assets/treatment/diamondpeel.png',
-    titleText: 'Diamond Peel & I2PL',
-    bodyText:
-        'The Diamond Peel uses "diamond" tips to mechanically exfoliate dull skin. This facial is combined with advanced intense pulsed light technology to bring the bling to your skin.',
-    duration: '120 mins',
-    priceRange: '\$482 to \$514 NETT',
-    whatsappAPI:
-        'https://api.whatsapp.com/send/?phone=6597703610&text&app_absent=0',
-    remarks: '50% off first trial*, 1-for-1 first trial*',
-  ));
-
-  myList.add(TreatmentItem(
-    imageURL: 'assets/treatment/oatmeal.png',
-    titleText: 'Oatmeal Facial & I2PL',
-    bodyText:
-        'More than a satisfying breakfast, the calming and soothing benefits of oatmeal are paired with advanced intense pulse light to reduce skin redness and even out skin tone even for sensitive skin conditions.',
-    duration: '120 mins',
-    priceRange: '\$418 to \$450 NETT',
-    whatsappAPI:
-        'https://api.whatsapp.com/send/?phone=6597703610&text&app_absent=0',
-    remarks: '50% off first trial*, 1-for-1 first trial*',
-  ));
-
-  return myList;
 }
 
 Widget getCardWidgets(List<TreatmentItem> items) {
