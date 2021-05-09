@@ -9,6 +9,7 @@ class TreatmentItem {
   String shopRoute;
   String categories;
   String remarks;
+  List<String> sessions;
 
   TreatmentItem(
       {String imageURL,
@@ -20,7 +21,8 @@ class TreatmentItem {
       String detailsPageRoute,
       String shopRoute,
       String categories,
-      String remarks}) {
+      String remarks,
+      List<String> sessions}) {
     this.imageURL = imageURL;
     this.titleText = titleText;
     this.bodyText = bodyText;
@@ -31,5 +33,6 @@ class TreatmentItem {
     this.shopRoute = shopRoute;
     this.categories = categories;
     this.remarks = remarks;
+    this.sessions = sessions;
   }
 }

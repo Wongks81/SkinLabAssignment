@@ -55,7 +55,7 @@ List<TreatmentItem> listBodyTreatment() {
     imageURL: 'assets/treatment/csprf_body.png',
     titleText: 'CSP RF',
     bodyText:
-        'CSP RF is a non-invasive treatment to tighten and contour the body with results visible after just 30mins of the first session - perfect for that special dinner date later in the evening.',
+        'CSP RF is a non-invasive treatment to tighten and contour the body with results visible after just 30mins of the first session - perfect for that dinner date later in the evening.',
     duration: '80 mins',
     priceRange: '\$426 NETT',
     remarks: '50% off first trial*, 1-for-1 first trial*',
@@ -303,7 +303,7 @@ List<TreatmentItem> listEyeTreatment() {
     imageURL: 'assets/treatment/csprf.png',
     titleText: 'CSP RF',
     bodyText:
-        'CSP RF is a non-invasive treatment for reducing puffy and droopy eyes with results visible after just 30mins of the first session - perfect for that special dinner date later in the evening.',
+        'CSP RF is a non-invasive treatment for reducing puffy and droopy eyes with results visible after just 30mins of the first session - perfect for that dinner date later in the evening.',
     duration: '50 mins',
     priceRange: '\$105 NETT',
     remarks: '50% off first trial*, 1-for-1 first trial*',
@@ -375,7 +375,7 @@ List<TreatmentItem> listNeckTreatment() {
     imageURL: 'assets/treatment/csprf.png',
     titleText: 'CSP RF',
     bodyText:
-        'CSP RF is a non-invasive treatment to reduce fine lines and loose skin around the neck with results visible after just 30mins of the first session - perfect for that special dinner date later in the evening.',
+        'CSP RF is a non-invasive treatment to reduce fine lines and loose skin around the neck with results visible after just 30mins of the first session - perfect for that dinner date later in the evening.',
     duration: '50 mins',
     priceRange: '\$212 NETT',
     remarks: '50% off first trial*, 1-for-1 first trial*',
@@ -550,6 +550,14 @@ List<TreatmentItem> listSpecialtyTreatment() {
         'https://api.whatsapp.com/send/?phone=6597703610&text&app_absent=0',
     detailsPageRoute: '/treatment/combo/lumenis',
     remarks: '50% off first trial*, 1-for-1 first trial*',
+    sessions: [
+      'A la carte session',
+      'First-Trail Offer \$180 NETT',
+      '3 Sessions (10% OFF)',
+      '6 Sessions (20% OFF)',
+      '12 Sessions (30% OFF)',
+      '24 Sessions (40% OFF',
+    ],
   ));
 
   myList.add(TreatmentItem(
@@ -562,6 +570,14 @@ List<TreatmentItem> listSpecialtyTreatment() {
     whatsappAPI:
         'https://api.whatsapp.com/send/?phone=6597703610&text&app_absent=0',
     remarks: '50% off first trial*, 1-for-1 first trial*',
+    sessions: [
+      'A la carte session',
+      'First-Trail Offer \$180 NETT',
+      '3 Sessions (10% OFF)',
+      '6 Sessions (20% OFF)',
+      '12 Sessions (30% OFF)',
+      '24 Sessions (40% OFF',
+    ],
   ));
 
   myList.add(TreatmentItem(
@@ -574,18 +590,34 @@ List<TreatmentItem> listSpecialtyTreatment() {
     whatsappAPI:
         'https://api.whatsapp.com/send/?phone=6597703610&text&app_absent=0',
     remarks: '50% off first trial*, 1-for-1 first trial*',
+    sessions: [
+      'A la carte session',
+      'First-Trail Offer \$180 NETT',
+      '3 Sessions (10% OFF)',
+      '6 Sessions (20% OFF)',
+      '12 Sessions (30% OFF)',
+      '24 Sessions (40% OFF',
+    ],
   ));
 
   myList.add(TreatmentItem(
     imageURL: 'assets/treatment/csprf.png',
     titleText: 'CSP RF',
     bodyText:
-        'CSP RF is a non-invasive treatment to tighten and contour skin with results visible after just 30mins of the first session - perfect  for that special dinner date later in the evening.',
+        'CSP RF is a non-invasive treatment to tighten and contour skin with results visible after just 30mins of the first session - perfect  for that dinner date later in the evening.',
     duration: '60 to 120 mins',
     priceRange: '\$426 to \$589 NETT',
     whatsappAPI:
         'https://api.whatsapp.com/send/?phone=6597703610&text&app_absent=0',
     remarks: '50% off first trial*, 1-for-1 first trial*',
+    sessions: [
+      'A la carte session',
+      'First-Trail Offer \$180 NETT',
+      '3 Sessions (10% OFF)',
+      '6 Sessions (20% OFF)',
+      '12 Sessions (30% OFF)',
+      '24 Sessions (40% OFF',
+    ],
   ));
 
   myList.add(TreatmentItem(
@@ -598,6 +630,14 @@ List<TreatmentItem> listSpecialtyTreatment() {
     whatsappAPI:
         'https://api.whatsapp.com/send/?phone=6597703610&text&app_absent=0',
     remarks: '50% off first trial*, 1-for-1 first trial*',
+    sessions: [
+      'A la carte session',
+      'First-Trail Offer \$180 NETT',
+      '3 Sessions (10% OFF)',
+      '6 Sessions (20% OFF)',
+      '12 Sessions (30% OFF)',
+      '24 Sessions (40% OFF',
+    ],
   ));
 
   myList.add(TreatmentItem(
@@ -610,6 +650,14 @@ List<TreatmentItem> listSpecialtyTreatment() {
     whatsappAPI:
         'https://api.whatsapp.com/send/?phone=6597703610&text&app_absent=0',
     remarks: '50% off first trial*, 1-for-1 first trial*',
+    sessions: [
+      'A la carte session',
+      'First-Trail Offer \$180 NETT',
+      '3 Sessions (10% OFF)',
+      '6 Sessions (20% OFF)',
+      '12 Sessions (30% OFF)',
+      '24 Sessions (40% OFF',
+    ],
   ));
 
   return myList;
