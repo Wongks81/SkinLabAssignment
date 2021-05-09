@@ -141,6 +141,14 @@ List<TreatmentItem> listPremiumTreatment() {
     duration: '120 minutes',
     priceRange: '\$426 NETT',
     remarks: '50% off first trial*, 1-for-1 first trial*',
+    sessions: [
+      'A la carte session',
+      'First-Trail Offer \$180 NETT',
+      '3 Sessions (10% OFF)',
+      '6 Sessions (20% OFF)',
+      '12 Sessions (30% OFF)',
+      '24 Sessions (40% OFF',
+    ],
   ));
 
   myList.add(TreatmentItem(
@@ -151,6 +159,14 @@ List<TreatmentItem> listPremiumTreatment() {
     duration: '120 mins',
     priceRange: '\$589 NETT',
     remarks: '50% off first trial*, 1-for-1 first trial*',
+    sessions: [
+      'A la carte session',
+      'First-Trail Offer \$180 NETT',
+      '3 Sessions (10% OFF)',
+      '6 Sessions (20% OFF)',
+      '12 Sessions (30% OFF)',
+      '24 Sessions (40% OFF',
+    ],
   ));
 
   myList.add(TreatmentItem(
@@ -161,6 +177,14 @@ List<TreatmentItem> listPremiumTreatment() {
     duration: '90 mins',
     priceRange: '\$375 NETT',
     remarks: '50% off first trial*, 1-for-1 first trial*',
+    sessions: [
+      'A la carte session',
+      'First-Trail Offer \$180 NETT',
+      '3 Sessions (10% OFF)',
+      '6 Sessions (20% OFF)',
+      '12 Sessions (30% OFF)',
+      '24 Sessions (40% OFF',
+    ],
   ));
 
   myList.add(TreatmentItem(
@@ -171,6 +195,14 @@ List<TreatmentItem> listPremiumTreatment() {
     duration: '120 mins',
     priceRange: '\$426 NETT',
     remarks: '50% off first trial*, 1-for-1 first trial*',
+    sessions: [
+      'A la carte session',
+      'First-Trail Offer \$180 NETT',
+      '3 Sessions (10% OFF)',
+      '6 Sessions (20% OFF)',
+      '12 Sessions (30% OFF)',
+      '24 Sessions (40% OFF',
+    ],
   ));
 
   myList.add(TreatmentItem(
@@ -181,6 +213,14 @@ List<TreatmentItem> listPremiumTreatment() {
     duration: '90 mins',
     priceRange: '\$460 NETT',
     remarks: '50% off first trial*, 1-for-1 first trial*',
+    sessions: [
+      'A la carte session',
+      'First-Trail Offer \$180 NETT',
+      '3 Sessions (10% OFF)',
+      '6 Sessions (20% OFF)',
+      '12 Sessions (30% OFF)',
+      '24 Sessions (40% OFF',
+    ],
   ));
 
   myList.add(TreatmentItem(
@@ -191,6 +231,14 @@ List<TreatmentItem> listPremiumTreatment() {
     duration: '120 mins',
     priceRange: '\$426 NETT',
     remarks: '50% off first trial*, 1-for-1 first trial*',
+    sessions: [
+      'A la carte session',
+      'First-Trail Offer \$180 NETT',
+      '3 Sessions (10% OFF)',
+      '6 Sessions (20% OFF)',
+      '12 Sessions (30% OFF)',
+      '24 Sessions (40% OFF',
+    ],
   ));
 
   myList.add(TreatmentItem(
@@ -201,6 +249,14 @@ List<TreatmentItem> listPremiumTreatment() {
     duration: '90 mins',
     priceRange: '\$398 NETT',
     remarks: '50% off first trial*, 1-for-1 first trial*',
+    sessions: [
+      'A la carte session',
+      'First-Trail Offer \$180 NETT',
+      '3 Sessions (10% OFF)',
+      '6 Sessions (20% OFF)',
+      '12 Sessions (30% OFF)',
+      '24 Sessions (40% OFF',
+    ],
   ));
 
   return myList;
@@ -405,6 +461,14 @@ List<TreatmentItem> listEssentialTreatment() {
     duration: '90 minutes',
     priceRange: '\$202 NETT',
     remarks: '50% off first trial*, 1-for-1 first trial*',
+    sessions: [
+      'A la carte session',
+      'First-Trail Offer \$180 NETT',
+      '3 Sessions (10% OFF)',
+      '6 Sessions (20% OFF)',
+      '12 Sessions (30% OFF)',
+      '24 Sessions (40% OFF',
+    ],
   ));
 
   myList.add(TreatmentItem(
@@ -415,6 +479,14 @@ List<TreatmentItem> listEssentialTreatment() {
     duration: '90 mins',
     priceRange: '\$202 NETT',
     remarks: '50% off first trial*, 1-for-1 first trial*',
+    sessions: [
+      'A la carte session',
+      'First-Trail Offer \$180 NETT',
+      '3 Sessions (10% OFF)',
+      '6 Sessions (20% OFF)',
+      '12 Sessions (30% OFF)',
+      '24 Sessions (40% OFF',
+    ],
   ));
 
   myList.add(TreatmentItem(
@@ -425,6 +497,14 @@ List<TreatmentItem> listEssentialTreatment() {
     duration: '90 mins',
     priceRange: '\$169 NETT',
     remarks: '50% off first trial*, 1-for-1 first trial*',
+    sessions: [
+      'A la carte session',
+      'First-Trail Offer \$180 NETT',
+      '3 Sessions (10% OFF)',
+      '6 Sessions (20% OFF)',
+      '12 Sessions (30% OFF)',
+      '24 Sessions (40% OFF',
+    ],
   ));
 
   myList.add(TreatmentItem(
@@ -435,6 +515,14 @@ List<TreatmentItem> listEssentialTreatment() {
     duration: '90 mins',
     priceRange: '\$288 NETT',
     remarks: '50% off first trial*, 1-for-1 first trial*',
+    sessions: [
+      'A la carte session',
+      'First-Trail Offer \$180 NETT',
+      '3 Sessions (10% OFF)',
+      '6 Sessions (20% OFF)',
+      '12 Sessions (30% OFF)',
+      '24 Sessions (40% OFF',
+    ],
   ));
 
   myList.add(TreatmentItem(
@@ -445,6 +533,14 @@ List<TreatmentItem> listEssentialTreatment() {
     duration: '90 mins',
     priceRange: '\$169 NETT',
     remarks: '50% off first trial*, 1-for-1 first trial*',
+    sessions: [
+      'A la carte session',
+      'First-Trail Offer \$180 NETT',
+      '3 Sessions (10% OFF)',
+      '6 Sessions (20% OFF)',
+      '12 Sessions (30% OFF)',
+      '24 Sessions (40% OFF',
+    ],
   ));
 
   return myList;
@@ -461,6 +557,14 @@ List<TreatmentItem> listSignatureTreatment() {
     duration: '30 to 90 minutes',
     priceRange: '\$169 to \$288 NETT',
     remarks: '50% off first trial*, 1-for-1 first trial*',
+    sessions: [
+      'A la carte session',
+      'First-Trail Offer \$180 NETT',
+      '3 Sessions (10% OFF)',
+      '6 Sessions (20% OFF)',
+      '12 Sessions (30% OFF)',
+      '24 Sessions (40% OFF',
+    ],
   ));
 
   myList.add(TreatmentItem(
@@ -471,6 +575,14 @@ List<TreatmentItem> listSignatureTreatment() {
     duration: '90 mins',
     priceRange: '\$288 NETT',
     remarks: '50% off first trial*, 1-for-1 first trial*',
+    sessions: [
+      'A la carte session',
+      'First-Trail Offer \$180 NETT',
+      '3 Sessions (10% OFF)',
+      '6 Sessions (20% OFF)',
+      '12 Sessions (30% OFF)',
+      '24 Sessions (40% OFF',
+    ],
   ));
 
   myList.add(TreatmentItem(
@@ -481,6 +593,14 @@ List<TreatmentItem> listSignatureTreatment() {
     duration: '90 mins',
     priceRange: '\$299 NETT',
     remarks: '50% off first trial*, 1-for-1 first trial*',
+    sessions: [
+      'A la carte session',
+      'First-Trail Offer \$180 NETT',
+      '3 Sessions (10% OFF)',
+      '6 Sessions (20% OFF)',
+      '12 Sessions (30% OFF)',
+      '24 Sessions (40% OFF',
+    ],
   ));
 
   myList.add(TreatmentItem(
@@ -491,6 +611,14 @@ List<TreatmentItem> listSignatureTreatment() {
     duration: '90 mins',
     priceRange: '\$288 NETT',
     remarks: '50% off first trial*, 1-for-1 first trial*',
+    sessions: [
+      'A la carte session',
+      'First-Trail Offer \$180 NETT',
+      '3 Sessions (10% OFF)',
+      '6 Sessions (20% OFF)',
+      '12 Sessions (30% OFF)',
+      '24 Sessions (40% OFF',
+    ],
   ));
 
   myList.add(TreatmentItem(
@@ -501,6 +629,14 @@ List<TreatmentItem> listSignatureTreatment() {
     duration: '90 mins',
     priceRange: '\$288 NETT',
     remarks: '50% off first trial*, 1-for-1 first trial*',
+    sessions: [
+      'A la carte session',
+      'First-Trail Offer \$180 NETT',
+      '3 Sessions (10% OFF)',
+      '6 Sessions (20% OFF)',
+      '12 Sessions (30% OFF)',
+      '24 Sessions (40% OFF',
+    ],
   ));
 
   myList.add(TreatmentItem(
@@ -511,6 +647,14 @@ List<TreatmentItem> listSignatureTreatment() {
     duration: '90 mins',
     priceRange: '\$202 NETT',
     remarks: '50% off first trial*, 1-for-1 first trial*',
+    sessions: [
+      'A la carte session',
+      'First-Trail Offer \$180 NETT',
+      '3 Sessions (10% OFF)',
+      '6 Sessions (20% OFF)',
+      '12 Sessions (30% OFF)',
+      '24 Sessions (40% OFF',
+    ],
   ));
 
   myList.add(TreatmentItem(
@@ -521,6 +665,14 @@ List<TreatmentItem> listSignatureTreatment() {
     duration: '90 mins',
     priceRange: '\$288 NETT',
     remarks: '50% off first trial*, 1-for-1 first trial*',
+    sessions: [
+      'A la carte session',
+      'First-Trail Offer \$180 NETT',
+      '3 Sessions (10% OFF)',
+      '6 Sessions (20% OFF)',
+      '12 Sessions (30% OFF)',
+      '24 Sessions (40% OFF',
+    ],
   ));
 
   myList.add(TreatmentItem(
@@ -531,6 +683,14 @@ List<TreatmentItem> listSignatureTreatment() {
     duration: '90 mins',
     priceRange: '\$288 NETT',
     remarks: '50% off first trial*, 1-for-1 first trial*',
+    sessions: [
+      'A la carte session',
+      'First-Trail Offer \$180 NETT',
+      '3 Sessions (10% OFF)',
+      '6 Sessions (20% OFF)',
+      '12 Sessions (30% OFF)',
+      '24 Sessions (40% OFF',
+    ],
   ));
 
   return myList;

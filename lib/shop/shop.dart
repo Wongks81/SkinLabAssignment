@@ -10,7 +10,12 @@ class Shop extends StatefulWidget {
 }
 
 class _ShopState extends State<Shop> {
-  List<TreatmentItem> allList = listSpecialtyTreatment();
+  List<TreatmentItem> allList = [
+    ...listSpecialtyTreatment(),
+    ...listSignatureTreatment(),
+    ...listPremiumTreatment(),
+    ...listEssentialTreatment()
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -31,9 +36,6 @@ class _ShopState extends State<Shop> {
 //get each record in card form
 Widget getWidgets(List<TreatmentItem> items) {
   List<Widget> list = [];
-  List<String> sessions = [];
-  // sessions.add('session1');
-  // sessions.add('session2');
 
   //title bar
   list.add(Container(
