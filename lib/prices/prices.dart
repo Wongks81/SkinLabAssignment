@@ -1,6 +1,8 @@
 import 'package:assignment/prices/prices_carousel.dart';
 import 'package:flutter/material.dart';
 
+import 'pdfDownload.dart';
+
 class Prices extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
@@ -12,8 +14,7 @@ class Prices extends StatelessWidget {
             fit: BoxFit.contain),
         backgroundColor: Colors.yellow[50],
         actions: [
-          //Not working
-          //PdfDownload(),
+          PdfDownload(),
         ],
       ),
       body: Column(

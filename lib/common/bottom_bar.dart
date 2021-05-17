@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:assignment/my_flutter_app_icons.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class BottomBar extends StatefulWidget {
   const BottomBar({Key key}) : super(key: key);
@@ -41,8 +42,22 @@ class _BottomBarState extends State<BottomBar> {
   }
 
   void _onItemTapped(int index) {
-    setState(() {
-      _selectedIndex = index;
-    });
+    // setState(() {
+    //   _selectedIndex = index;
+    // });
+    switch (index) {
+      case 0:
+        launch('https://skinlabmedspa.com/contact-us');
+        break;
+      case 1:
+        launch('https://www.facebook.com/skinlabsg');
+        break;
+      case 2:
+        launch('https://www.instagram.com/skinlabsg/?hl=en');
+        break;
+      case 3:
+        launch('https://api.whatsapp.com/send/?phone=6597703610&text&app_absent=0');
+        break;
+    }
   }
 }

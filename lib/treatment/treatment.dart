@@ -20,6 +20,56 @@ class Treatment extends StatelessWidget {
   }
 }
 
+Widget getCardWidgets(List<TreatmentCategories> items, BuildContext context) {
+  List<Widget> list = [];
+  for (var i = 0; i < items.length; i++) {
+    list.add(
+      Card(
+        color: Colors.yellow[100],
+        child: Column(
+          children: [
+            Image.asset(items[i].imageURL, height: 200, width: 400),
+            Container(
+              padding: EdgeInsets.fromLTRB(10, 10, 10, 2),
+              child: Text(
+                items[i].bodyText,
+                style: TextStyle(
+                  color: Colors.grey[800],
+                  letterSpacing: 1,
+                ),
+              ),
+            ),
+            Container(
+              child: OutlinedButton(
+                onPressed: () => {
+                  Navigator.pushNamed(context, items[i].locationURL),
+                },
+                style: OutlinedButton.styleFrom(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  side: BorderSide(width: 2, color: Colors.brown[300]),
+                ),
+                child: Text(
+                  items[i].titleText,
+                  style: TextStyle(
+                    fontSize: 20,
+                    color: Colors.brown[300],
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+  return new ListView(
+    children: list,
+  );
+}
+
 // records of the treatments
 List<TreatmentCategories> listTreatmentCat() {
   List<TreatmentCategories> myList = [];
@@ -94,54 +144,4 @@ List<TreatmentCategories> listTreatmentCat() {
           'Hairy issues? Let us help you resolve them with treatments like I2PL Hair Removal.',
       locationURL: '/treatment/hair'));
   return myList;
-}
-
-Widget getCardWidgets(List<TreatmentCategories> items, BuildContext context) {
-  List<Widget> list = [];
-  for (var i = 0; i < items.length; i++) {
-    list.add(
-      Card(
-        color: Colors.yellow[100],
-        child: Column(
-          children: [
-            Image.asset(items[i].imageURL, height: 200, width: 400),
-            Container(
-              padding: EdgeInsets.fromLTRB(10, 10, 10, 2),
-              child: Text(
-                items[i].bodyText,
-                style: TextStyle(
-                  color: Colors.grey[800],
-                  letterSpacing: 1,
-                ),
-              ),
-            ),
-            Container(
-              child: OutlinedButton(
-                onPressed: () => {
-                  Navigator.pushNamed(context, items[i].locationURL),
-                },
-                style: OutlinedButton.styleFrom(
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                  side: BorderSide(width: 2, color: Colors.brown[300]),
-                ),
-                child: Text(
-                  items[i].titleText,
-                  style: TextStyle(
-                    fontSize: 20,
-                    color: Colors.brown[300],
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-  return new ListView(
-    children: list,
-  );
 }

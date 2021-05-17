@@ -52,7 +52,7 @@ Widget getWidgets(List<TreatmentItem> items) {
     ),
   ));
 
-// catergories dropdown
+// categories dropdown
   list.add(Container(
       color: Colors.yellow[200],
       alignment: Alignment.center,
@@ -121,5 +121,3 @@ Widget getWidgets(List<TreatmentItem> items) {
     children: list,
   );
 }
-
-//get each dropdown value depending on string supplied
